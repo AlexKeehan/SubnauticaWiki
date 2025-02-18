@@ -1,0 +1,147 @@
+* {
+    color: white;
+}
+
+.info_main_wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.ex_info_section {
+    flex: 1 1 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.ex_pic_section {
+    flex: 0 1 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgba(0, 114, 178, 0.6);
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.ex_title {
+    font-size: 2em;
+    text-align: left;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.ex_info {
+    font-size: 1.1em;
+    line-height: 1.5;
+    align-content: start;
+}
+
+.ex_pic_title {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.ex_pic {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.ex_link {
+    font-size: 1.2em;
+    color: rgba(148, 203, 236, 1.0);
+}
+
+.list_main_wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.list_header {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.list_header h4 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.item_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: rgba(0, 114, 178, 0.6);
+}
+
+.item_pic {
+    display: block;
+    margin: 0 auto 10px;
+    width: auto;
+}
+
+.item_pic img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.item_name {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.depth_range {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.biome_resources {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.biome_resources li {
+    margin-bottom: 5px;
+}
+
+.item_desc {
+    font-size: 1.2em;
+    line-height: 1.5;
+}

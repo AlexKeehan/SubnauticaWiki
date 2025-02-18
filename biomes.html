@@ -5,60 +5,76 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="CSS/main_styles.css" />
+    <link rel="stylesheet" href="CSS/list_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
-    <div class="main_wrapper">
-        <header>
-            <div class="header_left">
-                <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
-                <img src="subnautica_logo.webp" alt="logo" , class="logo" />
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="homepage.html" class="logo_wrapper">
+                <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="homepage.html" class="title_wrapper">
                 <h1 class="title">Subnautica</h1>
-            </div>
-            <div class="header_center">
-                <input type="text" placeholder="Search For Item" class="search_bar" />
-                <nav>
-                    <ul>
-                        <li><a href="#weapons_list">Weapons</a></li>
-                        <li><a href="#tools_list">Tools</a></li>
-                        <li><a href="#vehicles_list">Vehicles</a></li>
-                        <li><a href="#biomes_list">Biomes</a></li>
-                        <li><a href="#flora_list">Flora</a></li>
-                        <li><a href="#fauna_list">Fauna</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header_right">
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
                 <ul>
-                    <li><a href="#login" class="login">Login</a></li>
-                    <li><a href="#signup" class="signup">Signup</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="flora.html">Flora</a></li>
+                    <li><a href="fauna.html">Fauna</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="#login" class="login">Login</a></li>
+                <li><a href="#signup" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
 
-        <main class="main_layout">
-            <div class="left_bar">
-                <ul>
-                    <li><a href="#socials">Socials</a></li>
-                    <li><a href="#news">News</a></li>
+    <div class="info_main_wrapper">
+            <section class="ex_info_section">
+                <h2 class="ex_title">Biomes</h2>
+                <p class="ex_info">Info hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo herInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo hereInfo here</p>
+            </section>
+            <section class="ex_pic_section">
+                <h3 class="ex_pic_title">Safe Shallows</h3>
+                <img src="Biomes/safe_shallows.webp" alt="example biome" class="ex_pic" />
+                <a href="safe_shallows.html" class="ex_link">Safe Shallows</a>
+            </section>
+    </div>
+
+    <div class="list_main_wrapper">
+        <section class="list_header">
+            <h4 class="list_title">Biomes</h4>
+        </section>
+
+        <section class="item_list">
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Biomes/blood_kelp_zone.webp" alt="biome image" class="item_img" />
+                    <p class="item_name" href="blood_kelp_zone.html">Blood Kelp Zone</p>
+                </div>
+                <p class="depth_range">Depth here</p>
+                <ul class="biome_resources">
+                    <li>Resource 1</li>
+                    <li>Resource 2</li>
+                    <li>Resource 3</li>
                 </ul>
+                <p class="item_desc">Description here</p>
             </div>
-            <div class="main_content">
-                <h2>About Subnautica</h2>
-                <p class="main_para">Main paragraph here</p>
-            </div>
-            <div class="right_bar">
-                <ul>
-                    <li><a href="#play_now">Play Now</a></li>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#fan_art">Fan Art</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                </ul>
-            </div>
-        </main>
+        </section>
 
     </div>
     <footer>
@@ -67,7 +83,7 @@
             <h1 class="title">Subnautica</h1>
         </div>
         <div class="help">
-            <a href="#help">Help</a>
+            <a href="help.html">Help</a>
         </div>
     </footer>
 

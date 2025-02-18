@@ -5,50 +5,62 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="CSS/main_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
-    <div class="main_wrapper">
-        <header>
-            <div class="header_left">
-                <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
-                <img src="subnautica_logo.webp" alt="logo" , class="logo" />
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="homepage.html" class="logo_wrapper">
+                <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="homepage.html" class="title_wrapper">
                 <h1 class="title">Subnautica</h1>
-            </div>
-            <div class="header_center">
-                <input type="text" placeholder="Search For Item" class="search_bar" />
-                <nav>
-                    <ul>
-                        <li><a href="#weapons_list">Weapons</a></li>
-                        <li><a href="#tools_list">Tools</a></li>
-                        <li><a href="#vehicles_list">Vehicles</a></li>
-                        <li><a href="#biomes_list">Biomes</a></li>
-                        <li><a href="#flora_list">Flora</a></li>
-                        <li><a href="#fauna_list">Fauna</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header_right">
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
                 <ul>
-                    <li><a href="#login" class="login">Login</a></li>
-                    <li><a href="#signup" class="signup">Signup</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="flora.html">Flora</a></li>
+                    <li><a href="fauna.html">Fauna</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="#login" class="login">Login</a></li>
+                <li><a href="#signup" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <div class="main_wrapper">
         <main class="main_layout">
             <div class="left_bar">
                 <ul>
-                    <li><a href="#socials">Socials</a></li>
-                    <li><a href="#news">News</a></li>
+                    <li>
+                        <a href="#socials">Socials</a>
+                        <ul class="socials_list">
+                            <li><a href="https://www.youtube.com/user/subnautica">Youtube</a></li>
+                            <li><a href="https://discord.com/invite/subnautica">Discord</a></li>
+                            <li><a href="https://www.reddit.com/r/subnautica/">Reddit</a></li>
+                            <li><a href="https://x.com/subnautica?mx=2">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/subnautica">Facebook</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="main_content">
                 <h2>About Subnautica</h2>
-                <p class="main_para">Main paragraph here</p>
+                <p class="main_para">The Subnautica games are a series of open-world exploration based survival games developed and published by Unknown Worlds Entertainment.</p>
             </div>
             <div class="right_bar">
                 <ul>
@@ -67,7 +79,7 @@
             <h1 class="title">Subnautica</h1>
         </div>
         <div class="help">
-            <a href="#help">Help</a>
+            <a href="help.html">Help</a>
         </div>
     </footer>
 

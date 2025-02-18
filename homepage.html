@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
-    <link rel="stylesheet" href="main_styles.css" />
+    <link rel="stylesheet" href="CSS/main_styles.css" />
 </head>
 
 <body>
@@ -14,19 +14,23 @@
     <header>
         <div class="header_left">
             <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
-            <img src="subnautica_logo.webp" alt="logo" , class="logo" />
-            <h1 class="title">Subnautica</h1>
+            <a href="homepage.html" class="logo_wrapper">
+                <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="homepage.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
         </div>
         <div class="header_center">
             <input type="text" placeholder="Search For Item" class="search_bar" />
             <nav>
                 <ul>
-                    <li><a href="#weapons_list">Weapons</a></li>
-                    <li><a href="#tools_list">Tools</a></li>
-                    <li><a href="#vehicles_list">Vehicles</a></li>
-                    <li><a href="#biomes_list">Biomes</a></li>
-                    <li><a href="#flora_list">Flora</a></li>
-                    <li><a href="#fauna_list">Fauna</a></li>
+                    <li><a href="weapons.html">Weapons</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="flora.html">Flora</a></li>
+                    <li><a href="fauna.html">Fauna</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,7 +46,8 @@
         <main class="main_layout">
             <div class="left_bar">
                 <ul>
-                    <li><a href="#socials">Socials</a>
+                    <li>
+                        <a href="#socials">Socials</a>
                         <ul class="socials_list">
                             <li><a href="https://www.youtube.com/user/subnautica">Youtube</a></li>
                             <li><a href="https://discord.com/invite/subnautica">Discord</a></li>
@@ -59,10 +64,11 @@
             </div>
             <div class="right_bar">
                 <ul>
-                    <li><a href="#play_now">Play Now</a></li>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#fan_art">Fan Art</a></li>
-                    <li><a href="#updates">Updates</a></li>
+                    <li><a href="https://www.subnautica.com/en">Play Now</a></li>
+                    <li><a href="https://forums.unknownworlds.com/categories/subnautica-general-discussion">Forums</a></li>
+                    <li><a href="https://www.deviantart.com/tag/subnautica">Fan Art</a></li>
+                    <li><a href="https://subnautica.fandom.com/wiki/Update_History_(Subnautica)">Updates</a></li>
+                    <li><a href="help.html">Help</a></li>
                 </ul>
             </div>
         </main>
@@ -72,9 +78,6 @@
         <div class="footer_content">
             <img src="subnautica_logo.webp" alt="logo" class="logo" />
             <h1 class="title">Subnautica</h1>
-        </div>
-        <div class="help">
-            <a href="#help">Help</a>
         </div>
     </footer>
 
