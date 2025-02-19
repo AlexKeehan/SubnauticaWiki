@@ -1,0 +1,127 @@
+.item_category, .item_type, .item_depth_range, .item_temp_range {
+    font-size: 1.3em;
+    color: rgba(148, 203, 236, 1.0);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(148, 203, 236, 1.0);
+    list-style-position: inside;
+}
+
+.item_info_wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item_info_wrapper li {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.item_category a, .item_type a, .item_depth_range a, .item_temp_range a {
+    font-size: .8em;
+}
+
+.comment_main_wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comment_title_wrapper {
+    margin-bottom: 20px;
+}
+
+.comment_title {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.comment_wrapper {
+    background-color: rgba(0, 114, 178, 0.6);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1.5px solid rgba(148, 203, 236, 1.0);
+}
+
+.comment {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(148, 203, 236, 1.0);
+}
+
+.profile_pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.comment_content {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.comment_text {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.comment_date {
+    font-size: .8em;
+    text-align: left;
+}
+
+.reply {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.reply_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.reply_wrapper {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.comment_wrapper .comment {
+    margin-bottom: 10px;
+}

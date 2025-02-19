@@ -173,14 +173,14 @@ nav ul li a {
 .main_content {
     width: 80%;
     padding: 20px;
-    background-color:azure;
     border-radius: 10px;
 }
 
 h2 {
     font-size: 1.5em;
-    justify-content: left;
-    color: black;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
 }
 
 .main_layout {
@@ -190,7 +190,7 @@ h2 {
 
 .main_para {
     font-size: 1.2em;
-    color: black;
+    color: white;
 }
 
 footer {
