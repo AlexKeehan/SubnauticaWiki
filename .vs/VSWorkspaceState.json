@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Biomes",
+    "\\CSS"
   ],
-  "SelectedNode": "\\Homepage.html",
+  "SelectedNode": "\\CSS\\list_styles.css",
   "PreviewInSolutionExplorer": false
 }
