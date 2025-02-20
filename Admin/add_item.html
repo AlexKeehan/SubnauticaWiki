@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../CSS/main_styles.css" />
+    <link rel="stylesheet" href="../CSS/add_item.css" />
+</head>
+
+<body>
+    <div class="background_img"></div>
+
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="../homepage.html" class="logo_wrapper">
+                <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="../homepage.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
+                <ul>
+                    <li><a href="../admin_dashboard.html">Admin Dashboard</a></li>
+                    <li><a href="../weapons.html">Weapons</a></li>
+                    <li><a href="../tools.html">Tools</a></li>
+                    <li><a href="../vehicles.html">Vehicles</a></li>
+                    <li><a href="../biomes.html">Biomes</a></li>
+                    <li><a href="../flora.html">Flora</a></li>
+                    <li><a href="../fauna.html">Fauna</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="add_item_wrapper">
+        <main class="add_item_layout">
+            <div class="add_item_info_section">
+                <h1>Add Item</h1>
+                <form id="add_item_form">
+                    <div class="input_info">
+                        <label for="item_name">Item Name: </label>
+                        <input type="text" id="item_name" name="item_name" placeholder="Enter Item Name">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_cat">Item Category: </label>
+                        <input type="text" id="item_cat" name="item_cat" placeholder="Enter Item Category">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_desc">Item Description: </label>
+                        <input type="text" id="item_desc" name="item_desc" placeholder="Enter Item Description">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_headers">Item Headers: </label>
+                        <input type="text" id="item_headers" name="item_headers" placeholder="Enter Item Headers">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_statistic">Item Statistic: </label>
+                        <input type="text" id="item_statistic" name="item_statistic" placeholder="Enter Statistic">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_date">Item Date: </label>
+                        <input type="text" id="item_date" name="item_date" placeholder="Enter Item Date">
+                    </div>
+                    <div class="input_info">
+                        <label for="item_image">Item Image: </label>
+                        <input type="file" id="item_image" name="item_image" accept=image/*">
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <aside class="image_section">
+            <img src="../placeholder_img.png" alt="placeholder image" class="placeholder_img">
+        </aside>
+
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            <h3 class="title">Subnautica</h3>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
+    <link rel="stylesheet" href="CSS/homepage_user_styles.css" />
 </head>
 
 <body>
@@ -14,10 +15,10 @@
     <header>
         <div class="header_left">
             <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
-            <a href="homepage.html" class="logo_wrapper">
+            <a href="homepage_user.html" class="logo_wrapper">
                 <img src="subnautica_logo.webp" alt="logo" class="logo" />
             </a>
-            <a href="homepage.html" class="title_wrapper">
+            <a href="homepage_user.html" class="title_wrapper">
                 <h1 class="title">Subnautica</h1>
             </a>
         </div>
@@ -35,17 +36,30 @@
             </nav>
         </div>
         <div class="header_right">
-            <ul>
-                <li><a href="login.html" class="login">Login</a></li>
-                <li><a href="signup.html" class="signup">Signup</a></li>
-            </ul>
+            <a>Sign out</a>
         </div>
     </header>
 
     <div class="main_wrapper">
         <main class="main_layout">
             <div class="left_bar">
+                <h2>About Subnautica</h2>
+                <p class="main_para">
+                    The Subnautica games are a series of open-world exploration based survival games developed and published by Unknown Worlds Entertainment.
+                    This game is set in the far future on the fictonal Planet 4546B and follows the player who crash landed on this planet and is now attempting to return back to civilization.
+                    The player will have to uncover the secrets of this planet if they hope to escape, all while surviving the deadly environment and hostile creatures.
+                </p>
+            </div>
+            <div class="main_content">
                 <ul>
+                    <li><a href="https://www.subnautica.com/en">Play Now</a></li>
+                    <li><a href="https://forums.unknownworlds.com/categories/subnautica-general-discussion">Forums</a></li>
+                    <li><a href="https://www.deviantart.com/tag/subnautica">Fan Art</a></li>
+                    <li><a href="https://subnautica.fandom.com/wiki/Update_History_(Subnautica)">Updates</a></li>
+                    <li><a href="help.html">Help</a></li>
+                </ul>
+                <ul>
+
                     <li>
                         <a>Socials</a>
                         <ul class="socials_list">
@@ -58,16 +72,22 @@
                     </li>
                 </ul>
             </div>
-            <div class="main_content">
-                <h2>About Subnautica</h2>
-                <p class="main_para">The Subnautica games are a series of open-world exploration based survival games developed and published by Unknown Worlds Entertainment.</p>
-            </div>
             <div class="right_bar">
                 <ul>
-                    <li><a href="#play_now">Play Now</a></li>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#fan_art">Fan Art</a></li>
-                    <li><a href="#updates">Updates</a></li>
+                    <li>
+                        <a class="history_title">History</a>
+                        <ul class="history_list">
+                            <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="activity_title">Activity</a>
+                        <ul class="activity_list">
+                            <li><a href="Biomes/safe_shallows.html">Username replied</a></li>
+                            <li><a href="Biomes/safe_shallows.html">Username replied</a></li>
+                            <li><a href="Biomes/safe_shallows.html">Username replied</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </main>
@@ -77,9 +97,6 @@
         <div class="footer_content">
             <img src="subnautica_logo.webp" alt="logo" class="logo" />
             <h1 class="title">Subnautica</h1>
-        </div>
-        <div class="help">
-            <a href="help.html">Help</a>
         </div>
     </footer>
 
