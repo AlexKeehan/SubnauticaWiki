@@ -16,6 +16,7 @@
 
     <div class="background_img"></div>
 
+    <! Same header as always, but without login/signup options>
     <header>
         <div class="header_left">
             <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
@@ -41,9 +42,11 @@
         </div>
     </header>
 
+    <! Section to display login information>
     <div class="login_wrapper">
         <div class="login_layout">
             <h2>Login</h2>
+            <! Little JavaScript to redirect to admin_dashboard.html>
             <form onsubmit="event.preventDefault(); RedirectAdminDashboard();">
                 <div class="textbox">
                     <input type="text" placeholder="Enter Username" name="username">
