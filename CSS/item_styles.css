@@ -1,8 +1,7 @@
 .item_category, .item_type, .item_depth_range, .item_temp_range {
     font-size: 1.3em;
     color: rgba(148, 203, 236, 1.0);
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    margin-bottom: 1em;
     display: block;
     width: 100%;
     border-bottom: 1px solid rgba(148, 203, 236, 1.0);
@@ -10,7 +9,7 @@
 }
 
 .item_info_wrapper {
-    padding: 20px;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,8 +17,8 @@
 }
 
 .item_info_wrapper li {
-    padding-bottom: 5px;
-    margin-bottom: 5px;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 .item_category a, .item_type a, .item_depth_range a, .item_temp_range a {
@@ -27,16 +26,15 @@
 }
 
 .comment_main_wrapper {
-    max-width: 1250px;
+    max-width: 65%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2em;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .comment_title_wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 .comment_title {
@@ -46,29 +44,29 @@
 
 .comment_wrapper {
     background-color: rgba(0, 114, 178, 0.6);
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 1.5px solid rgba(148, 203, 236, 1.0);
+    border: 2px solid rgba(148, 203, 236, 1.0);
 }
 
 .comment {
     display: flex;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 5px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-radius: .5em;
     border: 2px solid rgba(148, 203, 236, 1.0);
 }
 
 .profile_pic {
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
-    margin-bottom: 5px;
+    margin-bottom: .5em;
 }
 
 .user_info {
@@ -76,7 +74,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 5px;
+    margin-left: .5em;
 }
 
 .username {
@@ -86,12 +84,12 @@
 .comment_content {
     flex-grow: 1;
     text-align: left;
-    margin-left: 25px;
+    margin-left: 2em;
 }
 
 .comment_text {
     font-size: 1.1em;
-    margin-bottom: 5px;
+    margin-bottom: .5em;
 }
 
 .comment_date {
@@ -102,26 +100,26 @@
 .reply {
     display: flex;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 10px;
+    padding-top: .2em;
+    padding-bottom: 1em;
 }
 
 .reply_icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 15px;
-    margin-right: 5px;
+    margin-left: 1.5em;
+    margin-right: .5em;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 3em;
+    height: 3em;
 }
 
 .reply_wrapper {
-    margin-left: 30px;
-    margin-top: 20px;
+    margin-left: 1em;
+    margin-top: 2em;
 }
 
 .comment_wrapper .comment {
-    margin-bottom: 10px;
+    margin-bottom: .5em;
 }

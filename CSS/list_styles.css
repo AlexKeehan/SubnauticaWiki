@@ -10,12 +10,12 @@
 }
 
 .info_main_wrapper {
-    max-width: 1250px;
+    max-width: 65%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2em;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -24,7 +24,7 @@
 
 .ex_info_section {
     flex: 1 1 70%;
-    padding: 10px;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -33,7 +33,7 @@
 
 .ex_pic_section {
     flex: 0 1 30%;
-    padding: 10px;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,7 +45,7 @@
 .ex_title {
     font-size: 2em;
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: .6em;
     color: white;
 }
 
@@ -63,14 +63,14 @@
 .ex_pic_title {
     font-size: 1.4em;
     text-align: center;
-    margin-bottom: 5px;
+    margin-bottom: .5em;
 }
 
 .ex_pic {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     height: auto;
-    margin-bottom: 5px;
+    margin-bottom: .5em;
 }
 
 .ex_link {
@@ -79,18 +79,18 @@
 }
 
 .list_main_wrapper {
-    max-width: 1250px;
+    max-width: 65%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 1em;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .list_title_wrapper {
     text-align: left;
-    margin: 40px 0;
+    margin: 1em 0;
     font-size: 1.8em;
 }
 
@@ -99,12 +99,12 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 114, 178, 0.6);
     border-radius: 10px;
     align-items: center;
     border-right: 2px solid rgba(148, 203, 236, 1.0);
-    padding: 10px 0;
+    padding: 1em 0;
     font-size: 1.6em;
     margin: 0;
 }
@@ -117,11 +117,9 @@
 .item_list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: flex-start;
     padding: 0;
     flex-direction: column;
-    margin-top: 0;
     margin: 0;
 }
 
@@ -129,10 +127,10 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin: 10px 0;
-    padding: 5px;
+    margin: 1em 0;
+    padding: .5em;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 114, 178, 0.6);
     justify-content: center;
     align-items: center;
@@ -145,7 +143,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding-right: 10px;
+    padding-right: 1em;
 }
 
 .item_pic img {
@@ -161,7 +159,7 @@
 
 .item_name, .depth_range, .biome_resources, .item_desc {
     flex: 1;
-    padding: 0 10px;
+    padding: 0 1em;
     color: rgba(148, 203, 236, 1.0);
 }
 
@@ -175,12 +173,12 @@
 .biome_resources {
     padding: 0;
     font-size: 1.0em;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     list-style-position: inside;
 }
 
 .biome_resources li {
-    margin-bottom: 5px;
+    margin-bottom: .5em;
 }
 
 .item_desc {

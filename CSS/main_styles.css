@@ -21,10 +21,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 1em .5em;
     position: relative;
     background-color: rgba(39, 206, 245, 0.5);
-    max-width: 1250px;
+    max-width: 65%;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -39,8 +39,8 @@ header {
 }
 
 .logo {
-    height: 80px;
-    margin-right: 40px;
+    height: 6em;
+    margin-right: 2.2em;
 }
 
 .title {
@@ -63,8 +63,8 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin: 10px 0px;
+    gap: 1.4em;
+    padding-top: 1.4em;
 }
 
 nav ul li {
@@ -76,35 +76,35 @@ nav ul li a {
 }
 
 .search_bar {
-    margin-top: 10px;
-    padding: 8px;
+    margin-top: .8em;
+    padding: .2em;
     font-size: 0.9em;
-    width: 200px;
+    width: 45%;
 }
 
 .header_right {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1em;
+    right: .2em;
     font-size: 1.1em;
 }
 
 .header_right li {
     list-style-type: none;
-    padding-bottom: 8px;
+    padding-bottom: .4em;
 }
 
 .login, .signup {
     font-size: 1.2em;
     color: white;
     text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
 .login {
     background-color: rgba(51, 117, 56, 0.8);
-    padding: 3px;
+    padding: .3em;
 }
 
 .signup {
@@ -112,25 +112,23 @@ nav ul li a {
 }
 
 .main_wrapper {
-    max-width: 1250px;
+    max-width: 65%;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1.5em;
     background-color:rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 100%;
 }
 
 .left_bar, .right_bar {
-    width: 10%;
-    padding: 10px;
+    width: 17.5%;
     font-size: 1.4em;
 }
 
 .left_bar ul, .right_bar ul {
     padding: 0;
     list-style-type: none;
-    margin-bottom: 50px;
+    margin-bottom: 4em;
 }
 
 .left_bar ul a, .right_bar ul a {
@@ -138,7 +136,7 @@ nav ul li a {
 }
 
 .left_bar li, .right_bar li {
-    margin-bottom: 10px;
+    margin-bottom: .8em;
 }
 
 .left_bar li a, .right_bar li a{
@@ -146,9 +144,10 @@ nav ul li a {
 }
 
 .socials_list li {
-    margin-bottom: 5px;
-    margin-left: 35px;
+    margin-bottom: .3em;
+    margin-left: 1em;
     list-style-type: disc;
+    list-style-position: inside;
     font-size: 0.75em;
 }
 
@@ -166,28 +165,27 @@ nav ul li a {
 }
 
 .right_bar li a {
-    background-color: rgba(194, 107, 120, 0.8);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(39, 206, 245, 0.5);
+    box-shadow: 0 .2em .4em rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    color: rgba(148, 203, 236, 1.0);
 }
 
 .main_content {
     width: 80%;
-    padding: 20px;
+    padding: 1em;
     border-radius: 10px;
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: left;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 1.5em;
 }
 
 .main_layout {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1em;
 }
 
 .main_para {
@@ -198,7 +196,7 @@ h2 {
 footer {
     justify-content: space-between;
     width: 100%;
-    padding: 20px 0;
+    padding: 2em 0;
     background-color: rgba(39, 206, 245, 0.5);
     left: 0;
     margin-top: auto;
