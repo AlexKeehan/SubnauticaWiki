@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-    font-family: 'Times New Roman';
+    font-family: 'Times New Roman', serif;
     /* Source for background image: https://alphacoders.com/subnautica-wallpapers*/
     background: url("../background.jpg") no-repeat center center fixed;
     background-size: cover;
@@ -46,6 +46,7 @@ header {
 .title {
     font-size: 3.0em;
     color: black;
+    font-family: "Open Sans", serif;
 }
 
 .header_center {
