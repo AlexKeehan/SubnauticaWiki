@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../CSS/main_styles.css" />
+    <link rel="stylesheet" href="../CSS/item_styles.css" />
+    <link rel="stylesheet" href="../CSS/list_styles.css" />
+</head>
+
+<body>
+    <div class="background_img"></div>
+
+    <! Same header as always>
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="../homepage.html" class="logo_wrapper">
+                <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="../homepage.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
+                <ul>
+                    <li><a href="../weapons.html">Weapons</a></li>
+                    <li><a href="../tools.html">Tools</a></li>
+                    <li><a href="../vehicles.html">Vehicles</a></li>
+                    <li><a href="../biomes.html">Biomes</a></li>
+                    <li><a href="../flora.html">Flora</a></li>
+                    <li><a href="../fauna.html">Fauna</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="../login.html" class="login">Login</a></li>
+                <li><a href="../signup.html" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <! Main section with biome info>
+    <div class="info_main_wrapper">
+        <section class="ex_info_section">
+            <h2 class="ex_title">Jellyshroom Caves</h2>
+            <p class="ex_info">
+                This biome is a large cave stretching under multiple biomes with multiple entrances in the <a href="grassy_plateaus.html">Grassy Plateaus</a>, <a href="safe_shallows.html">Safe Shallows</a>, and <a href="kelp_forest.html">Kelp Forest</a>.
+                Cut off from the rest of the plane, this biome features unique creatures and flora that have evolved for existence in this harsh environment.
+            </p>
+        </section>
+        <! Section for biome picture and basic information>
+        <section class="ex_pic_section">
+            <h3 class="ex_pic_title">Jellyshroom Caves</h3>
+            <img src="Biome Images/jellyshroom_caves.webp" alt="example biome" class="ex_pic" />
+
+            <section class="item_info_wrapper">
+                <ul class="item_category">
+                    Category
+                    <li><a href="../biomes.html" class="item_category_text">Biome</a></li>
+                </ul>
+                <ul class="item_type">
+                    Type
+                    <li><a class="item_type_text">Cave</a></li>
+                </ul>
+                <ul class="item_depth_range">
+                    Depth Range
+                    <li><a class="item_depth_range_text">180 - 300 meters</a></li>
+                </ul>
+                <ul class="item_temp_range">
+                    Temperature Range
+                    <li><a class="item_temp_range_text">13.4&deg;C-14.3&deg;C</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="../Eggs/crabsnake_egg.html">Crabsnake Egg</a></li>
+                    <li><a href="../Resources/diamond.html">Diamond</a></li>
+                    <li><a href="../Resources/gold.html">Gold</a></li>
+                    <li><a href="../Resources/large_gold_dep.html">Large Gold Deposit</a></li>
+                    <li><a href="../Resources/large_lithium_dep.html">Large Lithium Deposit</a></li>
+                    <li><a href="../Resources/large_magnetite_dep.html">Large Magnetite Deposit</a></li>
+                    <li><a href="../Resources/lithium.html">Lithium</a></li>
+                    <li><a href="../Resources/magnetite.html">Magnetite</a></li>
+                </ul>
+
+            </section>
+        </section>
+    </div>
+
+    <! Section for comments with nested replies>
+    <div class="comment_main_wrapper">
+        <section class="comment_title_wrapper">
+            <h4 class="comment_title">Comments</h4>
+        </section>
+        <! Comment >
+        <section class="comment_list">
+            <div class="comment_wrapper">
+                <div class="comment">
+                    <div class="user_info">
+                        <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                        <span class="username">Username</span>
+                    </div>
+
+                    <div class="comment_content">
+                        <p class="comment_text">Great early game biome to explore</p>
+                        <span class="comment_date">Posted on: Feb 18, 2025</span>
+                    </div>
+
+                    <div class="reply_icon_wrapper">
+                        <img src="../reply_icon.jpg" alt="reply icon" class="reply_icon" />
+                    </div>
+                </div>
+
+                <! Replies >
+
+                <div class="reply_wrapper">
+                    <div class="reply">
+                        <div class="user_info">
+                            <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                            <span class="username">Reply Username</span>
+                        </div>
+
+                        <div class="comment_content">
+                            <p class="comment_text">I agree!</p>
+                            <span class="comment_date">Posted on: Feb 19, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="reply_wrapper">
+                        <div class="reply">
+                            <div class="user_info">
+                                <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                                <span class="username">Reply Username</span>
+                            </div>
+
+                            <div class="comment_content">
+                                <p class="comment_text">I hate this biome!</p>
+                                <span class="comment_date">Posted on: Feb 19, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="user_info">
+                        <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                        <span class="username">Username</span>
+                    </div>
+
+                    <div class="comment_content">
+                        <p class="comment_text">Had some great memories here when I first started playing. Love the environment, especially at night!</p>
+                        <span class="comment_date">Posted on: Feb 18, 2025</span>
+                    </div>
+
+                    <div class="reply_icon_wrapper">
+                        <img src="../reply_icon.jpg" alt="reply icon" class="reply_icon" />
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            <h1 class="title">Subnautica</h1>
+        </div>
+        <div class="help">
+            <a href="help.html">Help</a>
+        </div>
+    </footer>
+
+</body>
+</html>
