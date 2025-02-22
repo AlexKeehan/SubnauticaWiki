@@ -1,4 +1,4 @@
-.item_category, .item_type, .item_depth_range, .item_temp_range {
+.item_category, .item_type, .item_depth_range, .item_temp_range, .item_resources {
     font-size: 1.3em;
     color: rgba(148, 203, 236, 1.0);
     margin-bottom: 1em;
@@ -16,12 +16,7 @@
     align-items: flex-start;
 }
 
-.item_info_wrapper li {
-    padding-bottom: .5em;
-    margin-bottom: .5em;
-}
-
-.item_category a, .item_type a, .item_depth_range a, .item_temp_range a {
+.item_category a, .item_type a, .item_depth_range a, .item_temp_range a, .item_resources a{
     font-size: .8em;
 }
 
