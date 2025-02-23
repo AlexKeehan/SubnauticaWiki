@@ -152,6 +152,14 @@
     object-fit: cover;
 }
 
+.egg_pic {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: auto;
+    object-fit: cover;
+}
+
 .item_name {
     text-align: center;
     font-size: 1.1em;

@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="CSS/main_styles.css" />
+    <link rel="stylesheet" href="CSS/list_styles.css" />
+</head>
+
+<body>
+    <div class="background_img"></div>
+
+    <! Same header as always>
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="homepage.html" class="logo_wrapper">
+                <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="homepage.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
+                <ul>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="flora.html">Flora</a></li>
+                    <li><a href="fauna.html">Fauna</a></li>
+                    <li><a href="eggs.html">Eggs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="login.html" class="login">Login</a></li>
+                <li><a href="signup.html" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <! Section to display info about resources in general and example Titanium>
+    <div class="info_main_wrapper">
+            <section class="ex_info_section">
+                <h2 class="ex_title">Resources</h2>
+                <p class="ex_info">
+                    Resources are items used in the crafting process to create tools and items. They form the backbone of the survival experience and are essential for progression and survival.
+                </p>
+            </section>
+            <section class="ex_pic_section">
+                <h3 class="ex_pic_title">Titanium</h3>
+                <img src="Resources/Resources Images/titanium.webp" alt="example resource" class="ex_pic" />
+                <a href="Resources/titanium.html" class="ex_link">Titanium</a>
+            </section>
+    </div>
+
+    <! Section to display list of resources and their information>
+    <div class="list_main_wrapper">
+        <section class="list_title_wrapper">
+            <h4 class="list_title">Resources</h4>
+        </section>
+
+        <section class="item_list">
+            <! All resource images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Raw_Materials_(Subnautica) >
+            <!-------------------------------------------->
+            <div class="list_header">
+                <p>Resource</p>
+                <p>Obtain From</p>
+                <p>Location(s)</p>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/cave_sulfur.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/cave_sulfur.html">Cave Sulfur</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a href="Flora/sulfur_plant.html">Sulfur Plant</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/copper_ore.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/copper_ore.html">Copper Ore</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Limestone Outcrop</a></li>
+                    <li><a>Reefback Leviathan Barnacles</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/crystalline_sulfur.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/crystalline_sulfur.html">Crystalline Sulfur</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lava_castle.html">Lava Castle</a></li>
+                    <li><a href="Biomes/lava_lakes.html">Lava Lakes</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/diamond.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/diamond.html">Diamond</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Seabed</a></li>
+                    <li><a>Shale Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/gold.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/gold.html">Gold</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Sandstone Outcrop</a></li>
+                    <li><a>Shale Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/ion_cube.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/ion_cube.html">Ion Cube</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/kyanite.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/kyanite.html">Kyanite</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lava_castle.html">Lava Castle</a></li>
+                    <li><a href="Biomes/lava_lakes.html">Lava Lakes</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_copper_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_copper_dep.html">Large Copper Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_gold_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_gold_dep.html">Large Gold Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_kyanite_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_kyanite_dep.html">Large Kyanite Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lava_lakes.html">Lava Lakes</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_lead_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_lead_dep.html">Large Lead Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_lithium_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_lithium_dep.html">Large Lithium Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_magnetite_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_magnetite_dep.html">Large Magnetite Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_nickel_ore_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_nickel_ore_dep.html">Large Nickel Ore Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_quartz_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_quartz_dep.html">Large Quartz Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_salt_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_salt_dep.html">Large Salt Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_silver_ore_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_silver_ore_dep.html">Large Silver Ore Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_titanium_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_titanium_dep.html">Large Titanium Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/large_uraninite_crystal_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/large_uraninite_crystal_dep.html">Large Uraninite Crystal Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Drilling</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/lead.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/lead.html">Lead</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Sandstone Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/lithium.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/lithium.html">Lithium</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                    <li><a>Shale Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/magnetite.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/magnetite.html">Magnetite</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lava_castle.html">Lava Castle</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/metal_salvage.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/metal_salvage.html">Metal Salvage</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                    <li><a href="Biomes/lava_castle.html">Lava Castle</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/nickel_ore.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/nickel_ore.html">Nickel Ore</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/quartz.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/quartz.html">Quartz</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/ruby.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/ruby.html">Ruby</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+=                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+=                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+=                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/salt_dep.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/salt_dep.html">Salt Deposit</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Purple Pinecone</a></li>
+                    <li><a>Seabed</a></li>
+                    <li><a>Water Filtration Machine</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+=                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+=                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+=                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/silver_ore.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/silver_ore.html">Silver Ore</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Reefback Leviathan Barnacles</a></li>
+                    <li><a>Sandstone Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/stalker_teeth.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/stalker_teeth.html">Stalker Teeth</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Seabed (dropped by <a href="Fauna/stalker.html">Stalker</a> under certain conditions)</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/titanium.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/titanium.html">Titanium</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Limestone Outcrop</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Resources/Resources%20Images/uraninite_crystal.webp" alt="resource image" class="item_img" />
+                    <a class="item_name" href="Resources/uraninite_crystal.html">Uraninite Crystal</a>
+                </div>
+                <ul class="depth_range">
+                    <li><a>Large Resource Deposits</a></li>
+                    <li><a>Seabed</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            <h1 class="title">Subnautica</h1>
+        </div>
+        <div class="help">
+            <a href="help.html">Help</a>
+        </div>
+    </footer>
+
+</body>
+</html>

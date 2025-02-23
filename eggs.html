@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="CSS/main_styles.css" />
+    <link rel="stylesheet" href="CSS/list_styles.css" />
+</head>
+
+<body>
+    <div class="background_img"></div>
+
+    <! Same header as always>
+    <header>
+        <div class="header_left">
+            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <a href="homepage.html" class="logo_wrapper">
+                <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="homepage.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
+        </div>
+        <div class="header_center">
+            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <nav>
+                <ul>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="biomes.html">Biomes</a></li>
+                    <li><a href="flora.html">Flora</a></li>
+                    <li><a href="fauna.html">Fauna</a></li>
+                    <li><a href="eggs.html">Eggs</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="login.html" class="login">Login</a></li>
+                <li><a href="signup.html" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <! Section to display info about eggs in general and example Ampeel Egg>
+    <div class="info_main_wrapper">
+            <section class="ex_info_section">
+                <h2 class="ex_title">Eggs</h2>
+                <p class="ex_info">
+                    Eggs within Subnautica are the unhatched variants of their respective Fauna counterparts.
+                    Almost all eggs can be used to hatch their respective creatures. Eggs can only be found in the respective creatures biomes.
+                    <br/><br/>
+                    A common egg the player will encounter is the Ampeel Egg, which can be found in <a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a> and <a href="Biomes/bulb_zone.html">Bulb Zone</a>.
+                    Once found, this egg can be placed in an Alien Containment structure and will hatch after several in-game days.
+                </p>
+            </section>
+            <section class="ex_pic_section">
+                <h3 class="ex_pic_title">Ampeel Egg</h3>
+                <img src="Eggs/Eggs Images/ampeel_egg.webp" alt="example biome" class="ex_pic" />
+                <a href="Fauna/ampeel.html" class="ex_link">Ampeel Egg</a>
+            </section>
+    </div>
+
+    <! Section to display list of eggs and their information>
+    <div class="list_main_wrapper">
+        <section class="list_title_wrapper">
+            <h4 class="list_title">Eggs</h4>
+        </section>
+
+        <section class="item_list">
+            <! All egg images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Eggs) >
+            <!-------------------------------------------->
+            <div class="list_header">
+                <p>Egg</p>
+                <p>Description</p>
+                <p>Attitude</p>
+                <p>Location(s)</p>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/ampeel_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/ampeel.html">Ampeel</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/ampeel_html">Ampeels</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/boneshark_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/boneshark.html">Boneshark</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/boneshark_html">Bonesharks</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/crabsnake_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/crabsnake.html">Crabsnake</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/crabsnake_html">Crabsnakes</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Cave</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/crabsquid_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/crabsquid.html">Crabsquid</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/crabsquid_html">Crabsquid</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone (Northern)</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/crashfish_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/crashfish.html">Crashfish</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/crashfish_html">Crashfish</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/cuddlefish_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/cuddlefish.html">Cuddlefish</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/cuddlefish.html">Cuddlefish</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Passive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/gasopod_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/gasopod.html">Gasopod</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/gasopod.html">Gasopod</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Neutral</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/jellyray_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/jellyray.html">Jellyray</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/jellyray.html">Jellyray</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Passive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/lava_lizard_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/lava_lizard.html">Lava Lizard</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/lava_lizard.html">Lava Lizard</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/lava_castle.html">Lava Castle</a></li>
+                    <li><a href="Biomes/lava_lakes.html">Lava Lakes</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/mesmer_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/mesmer.html">Mesmer</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/mesmer.html">Mesmer</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/rabbit_ray_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/rabbit_ray.html">Rabbit Ray</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/rabbit_ray.html">Rabbit Ray</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Passive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/sand_shark_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/sand_shark.html">Sand Shark</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/sand_shark.html">Sand Shark</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/spadefish_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/spadefish.html">Spadefish</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/spadefish.html">Spadefish</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Passive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="egg_pic">
+                    <img src="Eggs/Eggs%20Images/stalker_egg.webp" alt="egg image" class="item_img" />
+                    <a class="item_name" href="Fauna/stalker.html">Stalker</a>
+                </div>
+                <p class="item_desc"><a href="Fauna/stalker.html">Stalker</a> spawn from this egg</p>
+                <ul class="depth_range">
+                    <li><a>Aggressive</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            <h1 class="title">Subnautica</h1>
+        </div>
+        <div class="help">
+            <a href="help.html">Help</a>
+        </div>
+    </footer>
+
+</body>
+</html>
