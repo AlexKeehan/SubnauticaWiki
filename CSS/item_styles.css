@@ -22,6 +22,7 @@
 
 .comment_main_wrapper {
     max-width: 65%;
+    width: 100%;
     margin: 0 auto;
     padding: 2em;
     background-color: rgba(0, 0, 0, 0.7);

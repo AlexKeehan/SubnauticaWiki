@@ -4,27 +4,30 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>index</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
-    <link rel="stylesheet" href="CSS/homepage_user_styles.css" />
+    <link rel="stylesheet" href="CSS/index_user_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
-    <! Same header as normal homepage>
+    <! Same header as normal index>
     <header>
         <div class="header_left">
             <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
-            <a href="homepage_user.html" class="logo_wrapper">
+            <a href="index_user.html" class="logo_wrapper">
                 <img src="subnautica_logo.webp" alt="logo" class="logo" />
             </a>
-            <a href="homepage_user.html" class="title_wrapper">
+            <a href="index_user.html" class="title_wrapper">
                 <h1 class="title">Subnautica</h1>
             </a>
         </div>
         <div class="header_center">
-            <input type="text" placeholder="Search For Item" class="search_bar" />
+            <form action="search_results.html" method="get" class="search_form">
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+                <button type="submit" class="search_button">Search</button>
+            </form>
             <nav>
                 <ul>
                     <li><a href="tools.html">Tools</a></li>
@@ -45,7 +48,7 @@
 
     <div class="main_wrapper">
         <main class="main_layout">
-            <! Rearrange content for logged-in user homepage>
+            <! Rearrange content for logged-in user index>
             <div class="left_bar">
                 <h2>About Subnautica</h2>
                 <p class="main_para">
