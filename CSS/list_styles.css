@@ -64,6 +64,7 @@
     font-size: 1.4em;
     text-align: center;
     margin-bottom: .5em;
+    color: white;
 }
 
 .ex_pic {
@@ -93,6 +94,7 @@
     text-align: left;
     margin: 1em 0;
     font-size: 1.8em;
+    color: white;
 }
 
 .list_header {
@@ -108,6 +110,7 @@
     padding: 1em 0;
     font-size: 1.6em;
     margin: 0;
+    color: white;
 }
 
 .list header p {
