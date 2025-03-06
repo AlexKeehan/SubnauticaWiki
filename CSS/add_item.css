@@ -47,6 +47,11 @@ h1 {
     font-size: .6em;
 }
 
+.submit_button {
+    height: 75%;
+    width: 75%;
+}
+
 textarea {
     resize: vertical;
 }

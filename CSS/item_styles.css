@@ -18,6 +18,7 @@
 
 .item_category a, .item_type a, .item_depth_range a, .item_temp_range a, .item_resources a{
     font-size: .8em;
+    color: rgba(148, 203, 236, 1.0);
 }
 
 .comment_main_wrapper {
@@ -36,6 +37,7 @@
 .comment_title {
     font-size: 1.8em;
     text-align: left;
+    color: white;
 }
 
 .comment_wrapper {
@@ -47,6 +49,7 @@
     flex-direction: column;
     align-items: flex-start;
     border: 2px solid rgba(148, 203, 236, 1.0);
+    color: white;
 }
 
 .comment {
