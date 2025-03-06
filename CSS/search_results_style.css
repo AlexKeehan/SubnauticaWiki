@@ -38,7 +38,7 @@
 }
 
 .item_pic {
-    flex: 1 1 20%;
+    flex: 1 1 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,14 +47,14 @@
 
 .item_pic img {
     width: 100%;
-    max-width: 10em;
+    max-width: 8em;
     height: auto;
     object-fit: cover;
     border-radius: 0.5em;
 }
 
 .item_info {
-    flex: 2 1 70%;
+    flex: 1;
     text-align: left;
     padding-left: 1em;
 }

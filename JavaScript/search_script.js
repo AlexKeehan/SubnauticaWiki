@@ -45,7 +45,6 @@ $(document).ready(function() {
     ]
     // Get params from url
     const input = $("#search_bar");
-    console.log(input);
     const suggestionsCont = $("#suggested_results");
 
     // Function to search for query in given list
@@ -60,9 +59,30 @@ $(document).ready(function() {
         return `Biomes/${name.toLowerCase().replace(/\s+/g, '_')}.html`;
     }
 
+    // Handle search button click
+    // Pass information to form submission handling function
+    $("form.search_form").on("submit", function(event) {
+        event.preventDefault();
+        const query = input.val().trim();
+        handleSearchSubmission(query);
+    })
+
+    // Function to handle if search is submitted
+    function handleSearchSubmission(query) {
+        const results = search(query);
+
+        if (results.length > 0) {
+            // Grab params and add to url
+            const resultsParam = encodeURIComponent(JSON.stringify(results));
+            window.location.href = `search_results.html?results=${resultsParam}`;
+        }
+        else {
+            alert("No results found");
+        }
+    }
+
     input.on("input", function() {
         const query = input.val().trim();
-        console.log("Query", query);
 
         if (query) {
             const results = search(query);
@@ -70,6 +90,7 @@ $(document).ready(function() {
             // Clear any existing suggestions
             suggestionsCont.empty();
 
+            // Format each suggestion
             if (results.length > 0) {
                 results.forEach(item => {
                     const suggested_item = $(`
@@ -98,4 +119,34 @@ $(document).ready(function() {
             suggestionsCont.hide();
         }
     });
+
+    // For the search results page
+    // Used to display results from search
+    const resultsParam = new URLSearchParams(window.location.search).get('results');
+    if (resultsParam) {
+        // Get results
+        const results = JSON.parse(decodeURIComponent(resultsParam));
+        const resultsCont = $("#search_results");
+        resultsCont.empty();
+
+        // Format each result
+        if (results.length > 0) {
+            results.forEach(item => {
+                const resultItem = $(`
+                <div class="item">
+                    <div class="item_pic">
+                        <img src="${item.image}" alt="${item.name}" />
+                    </div>
+                    <div class="item_info">
+                        <a href="${formatName(item.name)}" class="item_name">${item.name}</a>
+                        <p class="item_type">${item.type}</p>
+                    </div>
+                </div>
+                `);
+                resultsCont.append(resultItem);
+            });
+        } else {
+            resultsCont.html("<p class='no_results'>No results found.</p>");
+        }
+    }
 });
