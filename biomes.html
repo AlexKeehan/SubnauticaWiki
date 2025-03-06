@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/list_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
-    <! Same header as always>
+    <!--Same header as always-->
     <header>
         <div class="header_left">
-            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki-->
             <a href="index.html" class="logo_wrapper">
                 <img src="subnautica_logo.webp" alt="logo" class="logo" />
             </a>
@@ -25,9 +26,11 @@
         </div>
         <div class="header_center">
             <form action="search_results.html" method="get" class="search_form">
-                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
                 <button type="submit" class="search_button">Search</button>
             </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
             <nav>
                 <ul>
                     <li><a href="tools.html">Tools</a></li>
@@ -48,7 +51,7 @@
         </div>
     </header>
 
-    <! Section to display info about biomes in general and example biome Safe Shallows>
+    <!--Section to display info about biomes in general and example biome Safe Shallows-->
     <div class="info_main_wrapper">
             <section class="ex_info_section">
                 <h2 class="ex_title">Biomes</h2>
@@ -66,14 +69,14 @@
             </section>
     </div>
 
-    <! Section to display list of biomes and their information>
+    <!--Section to display list of biomes and their information-->
     <div class="list_main_wrapper">
         <section class="list_title_wrapper">
             <h4 class="list_title">Biomes</h4>
         </section>
 
         <section class="item_list">
-            <! All biome images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Biomes_(Subnautica) >
+            <!--All biome images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Biomes_(Subnautica)-->
             <!-------------------------------------------->
             <div class="list_header">
                 <p>Biome</p>
@@ -434,7 +437,7 @@
                     <img src="Biomes/Biome Images/floating_island.webp" alt="biome image" class="item_img" />
                     <a class="item_name" href="Biomes/floating_island.html">Floating Island</a>
                 </div>
-                <p class="item_desc">One of the only islands found within the Crater, this biome is kept aloft by ancient fauna.</p>
+                <p class="item_desc">One of the few islands found within the Crater, this biome is kept aloft by ancient fauna.</p>
                 <ul class="depth_range">
                     <li><a> Above sea level</a></li>
                 </ul>
@@ -1099,6 +1102,6 @@
             <a href="help.html">Help</a>
         </div>
     </footer>
-
+    <script src="JavaScript/search_script.js"></script>
 </body>
 </html>

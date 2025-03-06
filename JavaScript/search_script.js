@@ -44,7 +44,9 @@ $(document).ready(function() {
         {name: "Underwater Islands Caves", type: "Biome", image: "Biomes/Biome Images/underwater_islands_caves.webp"},
     ]
     // Get params from url
-    const query  = new URLSearchParams(window.location.search).get('query');
+    const input = $("#search_bar");
+    console.log(input);
+    const suggestionsCont = $("#suggested_results");
 
     // Function to search for query in given list
     function search(query) {
@@ -58,27 +60,42 @@ $(document).ready(function() {
         return `Biomes/${name.toLowerCase().replace(/\s+/g, '_')}.html`;
     }
 
-    const search_results = search(query);
+    input.on("input", function() {
+        const query = input.val().trim();
+        console.log("Query", query);
 
-    const resultsCont = $('#search_results');
+        if (query) {
+            const results = search(query);
 
-    if (search_results.length > 0) {
-        const resultsList = search_results.map(item => {
-            const biomeUrl = formatName(item.name);
-            return `
-                <div class="item">
-                    <div class="item_pic">
-                        <img src="${item.image}" alt="${item.name} image" class="item_img"/>
+            // Clear any existing suggestions
+            suggestionsCont.empty();
+
+            if (results.length > 0) {
+                results.forEach(item => {
+                    const suggested_item = $(`
+                    <div class="suggested_item">
+                        <a href="${formatName(item.name)}">${item.name}</a>
                     </div>
-                    <div class="item_info">
-                        <a class="item_name" href="${biomeUrl}"><strong>${item.name}</strong></a>
-                        <p class="item_type">${item.type}</p>
-                    </div>
-                </div>`;
-        }).join('');
-        resultsCont.html(resultsList);
-    }
-    else {
-        resultsCont.html(`<p class="no_results">No results found for: <strong>'${query}'</strong></p>`);
-    }
-})
+                    `);
+                    suggestionsCont.append(suggested_item);
+                });
+                suggestionsCont.show();
+            }
+            else {
+            suggestionsCont.html("<p> No suggestions.</p>");
+            }
+        }
+        else {
+            suggestionsCont.empty();
+            suggestionsCont.hide();
+        }
+    });
+
+    // Close suggestion list if user clicks out
+    $(document).click(function(event) {
+        if (!$(event.target).closest(".search_form").length) {
+            suggestionsCont.empty();
+            suggestionsCont.hide();
+        }
+    });
+});

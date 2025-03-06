@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="login_page">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/login.css" />
-    <script>
-        function RedirectAdminDashboard() {
-            window.location.href = "admin_dashboard.html";
-        }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 
     <div class="background_img"></div>
 
-    <! Same header as always, but without login/signup options>
+    <!--Same header as always, but without login/signup options-->
     <header>
         <div class="header_left">
-            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki-->
             <a href="index.html" class="logo_wrapper">
                 <img src="subnautica_logo.webp" alt="logo" class="logo" />
             </a>
@@ -29,9 +26,11 @@
         </div>
         <div class="header_center">
             <form action="search_results.html" method="get" class="search_form">
-                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
                 <button type="submit" class="search_button">Search</button>
             </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
             <nav>
                 <ul>
                     <li><a href="tools.html">Tools</a></li>
@@ -46,24 +45,36 @@
         </div>
     </header>
 
-    <! Section to display login information>
+    <!--Section to display login information-->
     <div class="login_wrapper">
         <div class="login_layout">
             <h2>Login</h2>
-            <! Little JavaScript to redirect to admin_dashboard.html>
-            <form onsubmit="event.preventDefault(); RedirectAdminDashboard();">
+            <!--Use JavaScript to redirect to admin_dashboard.html or display error message depending on login -->
+            <form id="login_form">
                 <div class="textbox">
-                    <input type="text" placeholder="Enter Username" name="username">
+                    <input type="text" placeholder="Enter Username" name="username" id="username">
                 </div>
                 <div class="textbox">
-                    <input type="password" placeholder="Enter Password" name="password">
+                    <input type="password" placeholder="Enter Password" name="password" id="password">
                 </div>
                 <div class="submit_button">
                     <button type="submit">Submit</button>
                 </div>
+                <!--If there is an error message, then it will show up here-->
+                <p id="error_msg" class="error_msg">Invalid username or password.</p>
             </form>
         </div>
     </div>
 
+
+    <!--Add footer-->
+    <footer>
+        <div class="footer_content">
+            <img src="subnautica_logo.webp" alt="logo" class="logo" />
+            <h1 class="title">Subnautica</h1>
+        </div>
+    </footer>
+
+    <script src="JavaScript/scripts.js"></script>    <script src="JavaScript/search_script.js"></script>
 </body>
 </html>

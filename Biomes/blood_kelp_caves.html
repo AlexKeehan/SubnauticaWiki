@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="../CSS/main_styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../CSS/item_styles.css" />
     <link rel="stylesheet" href="../CSS/list_styles.css" />
 </head>
@@ -13,10 +14,10 @@
 <body>
     <div class="background_img"></div>
 
-    <! Same header as always>
+    <!--Same header as always-->
     <header>
         <div class="header_left">
-            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki -->
             <a href="../index.html" class="logo_wrapper">
                 <img src="../subnautica_logo.webp" alt="logo" class="logo" />
             </a>
@@ -26,9 +27,11 @@
         </div>
         <div class="header_center">
             <form action="../search_results.html" method="get" class="search_form">
-                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
                 <button type="submit" class="search_button">Search</button>
             </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
             <nav>
                 <ul>
                     <li><a href="../tools.html">Tools</a></li>
@@ -49,7 +52,7 @@
         </div>
     </header>
 
-    <! Main section with biome info>
+    <!--Main section with biome info-->
     <div class="info_main_wrapper">
         <section class="ex_info_section">
             <h2 class="ex_title">Blood Kelp Caves</h2>
@@ -58,7 +61,7 @@
                 These caves also offer extensive bioluminescent flora and rock formations.
             </p>
         </section>
-        <! Section for biome picture and basic information>
+        <!--Section for biome picture and basic information-->
         <section class="ex_pic_section">
             <h3 class="ex_pic_title">Blood Kelp Caves</h3>
             <img src="Biome Images/blood_kelp_caves.webp" alt="example biome" class="ex_pic" />
@@ -95,12 +98,12 @@
         </section>
     </div>
 
-    <! Section for comments with nested replies>
+    <!--Section for comments with nested replies-->
     <div class="comment_main_wrapper">
         <section class="comment_title_wrapper">
             <h4 class="comment_title">Comments</h4>
         </section>
-        <! Comment >
+        <!--Comment -->
         <section class="comment_list">
             <div class="comment_wrapper">
                 <div class="comment">
@@ -119,7 +122,7 @@
                     </div>
                 </div>
 
-                <! Replies >
+                <!--Replies-->
 
                 <div class="reply_wrapper">
                     <div class="reply">
@@ -178,6 +181,6 @@
             <a href="help.html">Help</a>
         </div>
     </footer>
-
+    <script src="../JavaScript/search_script.js"></script>    <script src="../JavaScript/search_script.js"></script>
 </body>
 </html>

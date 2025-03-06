@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/search_results_style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <! Main Header>
+    <!--Main Header-->
     <header>
-        <! Split it in three for better styling>
-        <! Left side has title & logo>
+        <!--Split it in three for better styling-->
+        <!--Left side has title & logo-->
         <div class="header_left">
-            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki-->
             <a href="index.html" class="logo_wrapper">
                 <img src="subnautica_logo.webp" alt="logo" class="logo" />
             </a>
@@ -23,12 +24,14 @@
                 <h1 class="title">Subnautica</h1>
             </a>
         </div>
-        <! Middle has search bar and navigation options>
+        <!--Middle has search bar and navigation options-->
         <div class="header_center">
             <form action="search_results.html" method="get" class="search_form">
-                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
                 <button type="submit" class="search_button">Search</button>
             </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
             <nav>
                 <ul>
                     <li><a href="tools.html">Tools</a></li>
@@ -41,7 +44,7 @@
                 </ul>
             </nav>
         </div>
-        <! Right has login & signup options>
+        <!--Right has login & signup options-->
         <div class="header_right">
             <ul>
                 <li><a href="login.html" class="login">Login</a></li>
@@ -57,13 +60,13 @@
         </div>
     </main>
 
-    <! Add footer>
+    <!--Add footer-->
     <footer>
         <div class="footer_content">
             <img src="subnautica_logo.webp" alt="logo" class="logo" />
             <h1 class="title">Subnautica</h1>
         </div>
     </footer>
-
+    <script src="JavaScript/search_script.js"></script>
 </body>
 

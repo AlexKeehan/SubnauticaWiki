@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" class="add_item_page">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="../CSS/main_styles.css" />
     <link rel="stylesheet" href="../CSS/add_item.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
 
     <header>
         <div class="header_left">
-            <! Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki >
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki -->
             <a href="../index.html" class="logo_wrapper">
                 <img src="../subnautica_logo.webp" alt="logo" class="logo" />
             </a>
@@ -23,14 +24,15 @@
             </a>
         </div>
         <div class="header_center">
-            <form action="search_results.html" method="get" class="search_form">
-                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" />
+            <form action="../search_results.html" method="get" class="search_form">
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
                 <button type="submit" class="search_button">Search</button>
             </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
             <nav>
                 <ul>
                     <li><a href="../admin_dashboard.html">Admin Dashboard</a></li>
-                    <li><a href="../weapons.html">Weapons</a></li>
                     <li><a href="../tools.html">Tools</a></li>
                     <li><a href="../vehicles.html">Vehicles</a></li>
                     <li><a href="../biomes.html">Biomes</a></li>
@@ -90,5 +92,7 @@
         </div>
     </footer>
 
+    <script src="../JavaScript/scripts.js"></script>
+    <script src="../JavaScript/search_script.js"></script>
 </body>
 </html>
