@@ -173,6 +173,11 @@
     flex: 1;
     padding: 0 1em;
     color: rgba(148, 203, 236, 1.0);
+    text-decoration: none;
+}
+
+.item_desc a {
+    color: rgba(148, 203, 236, 1.0);
 }
 
 
@@ -191,6 +196,10 @@
 
 .biome_resources li {
     margin-bottom: .5em;
+}
+
+.biome_resources li a {
+    color: rgba(148, 203, 236, 1.0);
 }
 
 .item_desc {
