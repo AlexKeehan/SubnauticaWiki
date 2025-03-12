@@ -7,11 +7,13 @@
     <title>index</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/list_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
+    <!--Same header as always-->
     <header>
         <div class="header_left">
             <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki-->
@@ -49,37 +51,959 @@
         </div>
     </header>
 
-    <div class="main_wrapper">
-        <main class="main_layout">
-            <div class="left_bar">
-                <ul>
-                    <li>
-                        <a>Socials</a>
-                        <ul class="socials_list">
-                            <li><a href="https://www.youtube.com/user/subnautica">Youtube</a></li>
-                            <li><a href="https://discord.com/invite/subnautica">Discord</a></li>
-                            <li><a href="https://www.reddit.com/r/subnautica/">Reddit</a></li>
-                            <li><a href="https://x.com/subnautica?mx=2">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/subnautica">Facebook</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="main_content">
-                <h2>About Subnautica</h2>
-                <p class="main_para">The Subnautica games are a series of open-world exploration based survival games developed and published by Unknown Worlds Entertainment.</p>
-            </div>
-            <div class="right_bar">
-                <ul>
-                    <li><a href="#play_now">Play Now</a></li>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#fan_art">Fan Art</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                </ul>
-            </div>
-        </main>
-
+    <!--Section to display info about flora in general and example flora Bloodroot-->
+    <div class="info_main_wrapper">
+            <section class="ex_info_section">
+                <h2 class="ex_title">Flora</h2>
+                <p class="ex_info">
+                    The <a href="biomes.html">Biomes</a> on Planet 4546B support a variety of vibrant plant-life,
+                    which can range from luminous <a href="Flora/acid_mushroom.html">Acid Mushrooms</a> to the
+                    ominous <a href="Flora/giant_cove_tree.html">Giant Cove Tree</a>.
+                </p>
+            </section>
+            <section class="ex_pic_section">
+                <h3 class="ex_pic_title">Bloodroot</h3>
+                <img src="Flora/Flora%20Images/bloodroot.webp" alt="example flora" class="ex_pic" />
+                <a href="Flora/bloodroot.html" class="ex_link">Bloodroot</a>
+            </section>
     </div>
+
+    <!--Section to display list of flora and their information-->
+    <div class="list_main_wrapper">
+        <section class="list_title_wrapper">
+            <h4 class="list_title">Flora</h4>
+        </section>
+
+        <section class="item_list">
+            <!--All Flora Images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Flora -->
+            <!-------------------------------------------->
+            <div class="list_header">
+                <p>Flora</p>
+                <p>Use</p>
+                <p>Biome</p>
+                <p>Growth Time</p>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/acid_mushroom.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/acid_mushroom.html">Acid Mushroom</a>
+                </div>
+                <p class="item_desc">
+                    Crafting Batteries
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crash_zone.html">Crash Zone</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/anchor_pods.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/anchor_pods.html">Anchor Pods</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/blood_grass.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/blood_grass.html">Blood Grass</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/bloodroot.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/bloodroot.html">Bloodroot</a>
+                </div>
+                <p class="item_desc">
+                    Holds Blood Oil
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/bloodvine.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/bloodvine.html">Bloodvine</a>
+                </div>
+                <p class="item_desc">
+                    Holds Blood Oil
+                </p>
+                <ul class="biome_resources">
+                    <li><a><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/blue_palm.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/blue_palm.html">Blue Palm</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/brine_lily.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/brine_lily.html">Brine Lily</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/bulb_bush.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/bulb_bush.html">Bulb Bush</a>
+                </div>
+                <ul class="biome_resources">
+                    <li><a>Edible</a></li>
+                    <li><a>Crafting</a></li>
+                    <li><a>Hatching Enzymes</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/bulbo_tree.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/bulbo_tree.html">Bulbo Tree</a>
+                </div>
+                <p class="item_desc">
+                    Edible
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/cave_bush.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/cave_bush.html">Cave Bush</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/chinese_potato_plant.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/chinese_potato_plant.html">Chinese Potato Plant</a>
+                </div>
+                <p class="item_desc">
+                    Edible
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/crab_claw_kelp.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/crab_claw_kelp.html">Crab Claw Kelp</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/creepvine.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/creepvine.html">Creepvine</a>
+                </div>
+                <ul class="biome_resources">
+                    <li><a>Edible</a></li>
+                    <li><a>Holds Creepvine Seed Cluster</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/kelp_forest.html">Kelp Forest</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/deep_shroom.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/deep_shroom.html">Deep Shroom</a>
+                </div>
+                <p class="item_desc">
+                    Crafting
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="Biomes/inactive_lava_zone_corridor.html">Inactive Lava Zone Corridor</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/drooping_stingers.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/drooping_stingers.html">Drooping Stingers</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/eye_stalk.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/eye_stalk.html">Eye Stalk</a>
+                </div>
+                <p class="item_desc">
+                    Crafting
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/fern_palm.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/fern_palm.html">Fern Palm</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/furled_papyrus.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/furled_papyrus.html">Furled Papyrus</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1000 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/gabes_feather.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/gabes_feather.html">Gabe's Feather</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/gel_sack.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/gel_sack.html">Gel Sack</a>
+                </div>
+                <ul class="item_desc">
+                   <li><a>Edible</a></li>
+                   <li><a>Crafting</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bone_fields_caves.html">Bone Fields Caves</a></li>
+                    <li><a href="Biomes/deep_grand_reef.html">Deep Grand Reef</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/ghost_weed.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/ghost_weed.html">Ghost Weed</a>
+                </div>
+                <p class="item_desc">
+                    Crafting
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/giant_cove_tree.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/giant_cove_tree.html">Giant Cove Tree</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/grub_basket.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/grub_basket.html">Grub Basket</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/jaffa_cup.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/jaffa_cup.html">Jaffa Cup</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/jellyshroom.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/jellyshroom.html">Jellyshroom</a>
+                </div>
+                <p class="item_desc">
+                    Stores <a href="Fauna/crabsnake.html">Crabsnakes</a>
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/lantern_tree.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/lantern_tree.html">Lantern Tree</a>
+                </div>
+                <p class="item_desc">
+                    Holds edible Lantern Fruit
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/marblemelon_plant.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/marblemelon_plant.html">Marblemelon Plant</a>
+                </div>
+                <p class="item_desc">
+                    Edible
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>800 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/membrain_tree.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/membrain_tree.html">Membrain Tree</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/grand_reef.html">Grand Reef</a></li>
+                    <li><a href="Biomes/grand_reef_caves.html">Grand Reef Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1100 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/ming_plant.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/ming_plant.html">Ming Plant</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/pink_cap.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/pink_cap.html">Pink Cap</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/purple_pinecone.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/purple_pinecone.html">Purple Pinecone</a>
+                </div>
+                <p class="item_desc">
+                    Obtain <a href="Resources/salt_dep.html">Salt Deposits</a>
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/pygmy_fan.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/pygymy_fan.html">Pygmy Fan</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/redwort.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/redwort.html">Redwort</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1100 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/regress_shell.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/regress_shell.html">Regress Shell</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>800 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/rouge_cradle.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/rouge_cradle.html">Rouge Cradle</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/blood_kelp_caves.html">Blood Kelp Caves</a></li>
+                    <li><a href="Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1100 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/sea_crown.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/sea_crown.html">Sea Crown</a>
+                </div>
+                <p class="item_desc">
+                    Crafting
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>700 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/speckled_ratter.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/speckled_ratter.html">Speckled Ratter</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                    <li><a href="Biomes/mountain_island.html">Mountain Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/spiked_horn_glass.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/spiked_horn_grass.html">Spiked Horn Grass</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>800 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/spotted_dockleaf.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/spotted_dockleaf.html">Spotted Dockleaf</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/underwater_islands_caves.html">Underwater Islands Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>800 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/sulfur_plant.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/sulfur_plant.html">Sulfur Plant</a>
+                </div>
+                <ul class="biome_resources">
+                    <li>Contains <a href="Resources/cave_sulfur.html">Cave Sulfur</a></li>
+                    <li>Houses <a href="Flora/crashfish.html">Crashfish</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/tiger_plant.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/tiger_plant.html">Tiger Plant</a>
+                </div>
+                <p class="item_desc">
+                    Hostile to Player
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1100 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/tree_leech.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/tree_leech.html">Tree Leech</a>
+                </div>
+                <p class="item_desc">
+                    N/A
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone_caves.html">Bulb Zone Caves</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/kelp_forest_caves.html">Kelp Forest Caves</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/veined_nettle.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/veined_nettle.html">Veined Nettle</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>500 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/violet_beau.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/violet_beau.html">Violet Beau</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/crash_zone_mesas.html">Crash Zone Mesas</a></li>
+                    <li><a href="Biomes/deep_sparse_reef.html">Deep Sparse Reef</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/jellyshroom_caves.html">Jellyshroom Caves</a></li>
+                    <li><a href="Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="Biomes/mountains.html">Mountains</a></li>
+                    <li><a href="Biomes/mountains_caves.html">Mountains Caves</a></li>
+                    <li><a href="Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                    <li><a href="Biomes/sparse_reef.html">Sparse Reef</a></li>
+                    <li><a href="Biomes/underwater_islands.html">Underwater Islands</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>1200 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/voxel_shrub.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/voxel_shrub.html">Voxel Shrub</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/crag_field.html">Crag Field</a></li>
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/floating_island.html">Floating Island</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>400 seconds</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="item_pic">
+                    <img src="Flora/Flora%20Images/writhing_weed.webp" alt="flora image" class="item_img" />
+                    <a class="item_name" href="Flora/writhing_weed.html">Writhing Weed</a>
+                </div>
+                <p class="item_desc">
+                    Decorative
+                </p>
+                <ul class="biome_resources">
+                    <li><a href="Biomes/bulb_zone.html">Bulb Zone</a></li>
+                    <li><a href="Biomes/dunes.html">Dunes</a></li>
+                    <li><a href="Biomes/dunes_caves.html">Dunes Caves</a></li>
+                    <li><a href="Biomes/grassy_plateaus.html">Grassy Plateaus</a></li>
+                    <li><a href="Biomes/grassy_plateaus_caves.html">Grassy Plateaus Caves</a></li>
+                    <li><a href="Biomes/mushroom_forest.html">Mushroom Forest</a></li>
+                    <li><a href="Biomes/mushroom_forest_caves.html">Mushroom Forest Caves</a></li>
+                    <li><a href="Biomes/safe_shallows.html">Safe Shallows</a></li>
+                    <li><a href="Biomes/safe_shallows_caves.html">Safe Shallows Caves</a></li>
+                </ul>
+                <ul class="biome_resources">
+                    <li><a>600 seconds</a></li>
+                </ul>
+            </div>
     <footer>
         <div class="footer_content">
             <img src="subnautica_logo.webp" alt="logo" class="logo" />
