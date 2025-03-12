@@ -7,11 +7,13 @@
     <title>index</title>
     <link rel="stylesheet" href="CSS/main_styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS/list_styles.css" />
 </head>
 
 <body>
     <div class="background_img"></div>
 
+    <!--Same header as always-->
     <header>
         <div class="header_left">
             <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki-->
@@ -49,37 +51,130 @@
         </div>
     </header>
 
-    <div class="main_wrapper">
-        <main class="main_layout">
-            <div class="left_bar">
-                <ul>
-                    <li>
-                        <a>Socials</a>
-                        <ul class="socials_list">
-                            <li><a href="https://www.youtube.com/user/subnautica">Youtube</a></li>
-                            <li><a href="https://discord.com/invite/subnautica">Discord</a></li>
-                            <li><a href="https://www.reddit.com/r/subnautica/">Reddit</a></li>
-                            <li><a href="https://x.com/subnautica?mx=2">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/subnautica">Facebook</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="main_content">
-                <h2>About Subnautica</h2>
-                <p class="main_para">The Subnautica games are a series of open-world exploration based survival games developed and published by Unknown Worlds Entertainment.</p>
-            </div>
-            <div class="right_bar">
-                <ul>
-                    <li><a href="#play_now">Play Now</a></li>
-                    <li><a href="#forums">Forums</a></li>
-                    <li><a href="#fan_art">Fan Art</a></li>
-                    <li><a href="#updates">Updates</a></li>
-                </ul>
-            </div>
-        </main>
-
+    <!--Section to display info about vehicles in general and example tool Seamoth-->
+    <div class="info_main_wrapper">
+            <section class="ex_info_section">
+                <h2 class="ex_title">Vehicles</h2>
+                <p class="ex_info">
+                    As the player progresses, the creation of various vehicles are necessary for traversal and defense.
+                    These vehicles can range from simple single-person traversal vehicles to massive submarines that can house an entire base.
+                </p>
+            </section>
+            <section class="ex_pic_section">
+                <h3 class="ex_pic_title">Seamoth</h3>
+                <img src="Vehicles/Vehicles%20Images/seamoth.webp" alt="example vehicle" class="ex_pic" />
+                <a href="Vehicles/seamoth.html" class="ex_link">Seamoth</a>
+            </section>
     </div>
+
+    <!--Section to display list of vehicles and their information-->
+    <div class="list_main_wrapper">
+        <section class="list_title_wrapper">
+            <h4 class="list_title">Vehicles</h4>
+        </section>
+
+        <section class="item_list">
+            <!--All Vehicle Images are from the official Subnautica wiki: https://subnautica.fandom.com/wiki/Vehicles -->
+            <!-------------------------------------------->
+            <div class="list_header">
+                <p>Vehicle</p>
+                <p>Description</p>
+                <p>Velocity</p>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/aurora.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/aurora.html">Aurora</a>
+                </div>
+                <p class="item_desc">
+                    An Alterra Capital Ship that houses an entire crew
+                </p>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/cyclops.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/cyclops.html">Cyclops</a>
+                </div>
+                <p class="item_desc">
+                    A vast industrial-grade multiple person submarine
+                </p>
+                <ul class="biome_resources">
+                    <li><a>Ahead Slow: 5.4</a></li>
+                    <li><a>Ahead Standard: 8.2</a></li>
+                    <li><a>Ahead Flank: 10.5</a></li>
+                    <li><a>Reverse:4.8</a></li>
+                    <li><a>Vertical: 3.1</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/neptune_escape_rocket.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/neptune_escape_rocket.html">Neptune Escape Rocket</a>
+                </div>
+                <p class="item_desc">
+                    A single-person escape rocket that has the power to escape Planet 4546B's atmosphere
+                </p>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/prawn_suit.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/prawn_suit.html">Prawn Suit</a>
+                </div>
+                <p class="item_desc">
+                    A mech suit designed for navigation in extremely hostile environments
+                </p>
+                <ul class="biome_resources">
+                    <li><a>Forward: 6</a></li>
+                    <li><a>Backwards: 2.5</a></li>
+                    <li><a>Lateral: 4</a></li>
+                    <li><a>Vertical: 6</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/seaglide.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/seaglide.html">Seaglide</a>
+                </div>
+                <p class="item_desc">
+                    A handheld vehicle that can significantly increase the player's swim speed
+                </p>
+                <ul class="biome_resources">
+                    <li><a>N/A</a></li>
+                </ul>
+            </div>
+
+            <!-------------------------------------------->
+            <div class="item">
+                <div class="vehicle_pic">
+                    <img src="Vehicles/Vehicles%20Images/seamoth.webp" alt="vehicle image" class="item_img" />
+                    <a class="item_name" href="Vehicles/seamoth.html">Seamoth</a>
+                </div>
+                <p class="item_desc">
+                    A one-person sea traversal vehicle
+                </p>
+                <ul class="biome_resources">
+                    <li><a>Forward: 12.7</a></li>
+                    <li><a>Backwards: 5</a></li>
+                    <li><a>Lateral: 11.5</a></li>
+                    <li><a>Vertical: 11</a></li>
+                </ul>
+            </div>
     <footer>
         <div class="footer_content">
             <img src="subnautica_logo.webp" alt="logo" class="logo" />
