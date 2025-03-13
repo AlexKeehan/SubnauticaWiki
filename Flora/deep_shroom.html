@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="../CSS/main_styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../CSS/item_styles.css" />
+    <link rel="stylesheet" href="../CSS/list_styles.css" />
+</head>
+
+<body>
+    <div class="background_img"></div>
+
+    <!--Same header as always-->
+    <header>
+        <div class="header_left">
+            <!--Source for game logo: https://subnautica.fandom.com/wiki/Subnautica_Wiki -->
+            <a href="../index.html" class="logo_wrapper">
+                <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            </a>
+            <a href="../index.html" class="title_wrapper">
+                <h1 class="title">Subnautica</h1>
+            </a>
+        </div>
+        <div class="header_center">
+            <form action="../search_results.html" method="get" class="search_form">
+                <input type="text" name="query" placeholder="Search For 'lava'" class="search_bar" id="search_bar"/>
+                <button type="submit" class="search_button">Search</button>
+            </form>
+            <!-- Dropdown for suggested search results-->
+            <div id="suggested_results" class="suggestions"></div>
+            <nav>
+                <ul>
+                    <li><a href="../tools.html">Tools</a></li>
+                    <li><a href="../vehicles.html">Vehicles</a></li>
+                    <li><a href="../biomes.html">Biomes</a></li>
+                    <li><a href="../flora.html">Flora</a></li>
+                    <li><a href="../fauna.html">Fauna</a></li>
+                    <li><a href="../eggs.html">Eggs</a></li>
+                    <li><a href="../resources.html">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header_right">
+            <ul>
+                <li><a href="../login.html" class="login">Login</a></li>
+                <li><a href="../signup.html" class="signup">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--Main section with flora info-->
+    <div class="info_main_wrapper">
+        <section class="ex_info_section">
+            <h2 class="ex_title">Deep Shroom</h2>
+            <p class="ex_info">
+                The Deep Shroom is a hazardous flora species often found within the <a href="../Biomes/blood_kelp_zone.html">Blood Kelp Zone</a>.
+                It is a relative to the <a href="acid_mushroom.html">Acid Mushroom</a>, and can be used in the creation of Hydrochloric Acid.
+            </p>
+        </section>
+        <!--Section for flora picture and basic information-->
+        <section class="ex_pic_section">
+            <h3 class="ex_pic_title">Deep Shroom</h3>
+            <img src="Flora%20Images/deep_shroom.webp" alt="example flora" class="ex_pic" />
+
+            <section class="item_info_wrapper">
+                <ul class="item_category">
+                    <li>Category</li>
+                    <li><a href="../flora.html" class="item_category_text">Flora</a></li>
+                </ul>
+                <ul class="item_type">
+                    <li>Attitude</li>
+                    <li><a class="item_type_text">Hazardous</a></li>
+                </ul>
+                <ul class="item_resources">
+                   <li>Biome</li>
+                    <li><a href="../Biomes/blood_kelp_zone.html">Blood Kelp Zone</a></li>
+                    <li><a href="../Biomes/inactive_lava_zone.html">Inactive Lava Zone</a></li>
+                    <li><a href="../Biomes/lost_river.html">Lost River</a></li>
+                    <li><a href="../Biomes/sea_treaders_path.html">Sea Treader's Path</a></li>
+                    <li><a href="../Biomes/sea_treaders_tunnel_caves.html">Sea Treader's Tunnel Caves</a></li>
+                </ul>
+            </section>
+        </section>
+    </div>
+
+    <!--Section for comments with nested replies-->
+    <div class="comment_main_wrapper">
+        <section class="comment_title_wrapper">
+            <h4 class="comment_title">Comments</h4>
+        </section>
+        <!--Comment -->
+        <section class="comment_list">
+            <div class="comment_wrapper">
+                <div class="comment">
+                    <div class="user_info">
+                        <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                        <span class="username">Username</span>
+                    </div>
+
+                    <div class="comment_content">
+                        <p class="comment_text">Great early game biome to explore</p>
+                        <span class="comment_date">Posted on: Feb 18, 2025</span>
+                    </div>
+
+                    <div class="reply_icon_wrapper">
+                        <img src="../reply_icon.jpg" alt="reply icon" class="reply_icon" />
+                    </div>
+                </div>
+
+                <!--Replies-->
+
+                <div class="reply_wrapper">
+                    <div class="reply">
+                        <div class="user_info">
+                            <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                            <span class="username">Reply Username</span>
+                        </div>
+
+                        <div class="comment_content">
+                            <p class="comment_text">I agree!</p>
+                            <span class="comment_date">Posted on: Feb 19, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="reply_wrapper">
+                        <div class="reply">
+                            <div class="user_info">
+                                <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                                <span class="username">Reply Username</span>
+                            </div>
+
+                            <div class="comment_content">
+                                <p class="comment_text">I hate this biome!</p>
+                                <span class="comment_date">Posted on: Feb 19, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="user_info">
+                        <img src="../profile_pic.jpg" alt="profile picture" class="profile_pic" />
+                        <span class="username">Username</span>
+                    </div>
+
+                    <div class="comment_content">
+                        <p class="comment_text">Had some great memories here when I first started playing. Love the environment, especially at night!</p>
+                        <span class="comment_date">Posted on: Feb 18, 2025</span>
+                    </div>
+
+                    <div class="reply_icon_wrapper">
+                        <img src="../reply_icon.jpg" alt="reply icon" class="reply_icon" />
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer_content">
+            <img src="../subnautica_logo.webp" alt="logo" class="logo" />
+            <h1 class="title">Subnautica</h1>
+        </div>
+        <div class="help">
+            <a href="help.html">Help</a>
+        </div>
+    </footer>
+    <script src="../JavaScript/search_script.js"></script>    <script src="../JavaScript/search_script.js"></script>
+</body>
+</html>
